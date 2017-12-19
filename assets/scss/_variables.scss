@@ -1,0 +1,22 @@
+@import 'the-color';
+
+// Colors
+$color-variations: (
+    noir: #000000,
+    blanc: #ffffff,
+
+    social: (
+        /**
+         * Brand colors
+         *
+         * @see https://brandcolors.net/
+         */
+        defaut: #9f9f9f,
+        facebook: #3b5998,
+        twitter: #1da1f2,
+        google-plus: #dd4b39,
+        linkedin: #0077b5,
+        vimeo: #1ab7ea,
+        youtube: #cd201f,
+    )
+);

@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+canvas {
+    &::selection {
+        background-color: transparent;
+    }
+}
+
+img {
+    border: none;
+    display: block;
+    outline: none;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+header, footer, nav, section, article {
+    display: block;
+    position: relative;
+}
+
+html {
+    font-size: 10px;
+    overflow-y: auto;
+}
+
+body {
+    line-height: normal;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    color: cc_getColor( noir );
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+input, textarea, select, option {
+    outline: none !important;
+}
