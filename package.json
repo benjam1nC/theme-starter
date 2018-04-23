@@ -6,11 +6,10 @@
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "browser-sync-webpack-plugin": "^1.2.0",
-    "cross-env": "^5.1.1",
-    "dotenv": "^4.0.0",
-    "jquery": "^3.2.1",
-    "laravel-mix": "^1.7.2"
+    "cross-env": "^5.1.4",
+    "imagemin-pngquant": "5.0.1",
+    "jquery": "^3.3.1",
+    "laravel-mix": "^2.1.11",
+    "object-fit-images": "^3.2.3"
   }
 }
