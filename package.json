@@ -7,9 +7,13 @@
   },
   "devDependencies": {
     "cross-env": "^5.1.4",
-    "imagemin-pngquant": "5.0.1",
-    "jquery": "^3.3.1",
-    "laravel-mix": "^2.1.11",
-    "object-fit-images": "^3.2.3"
+    "imagemin-pngquant": "^7.0.0",
+    "laravel-mix": "^4.0.14",
+    "object-fit-images": "^3.2.3",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.17.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.6",
+    "webfontloader": "^1.6.28"
   }
 }

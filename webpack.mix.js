@@ -12,13 +12,9 @@ let mix = require('laravel-mix');
  */
 
 mix.js('assets/js/app.js', 'dist/')
-    .sass('assets/sass/app.scss', 'dist/')
-    .sourceMaps()
+    .sass('assets/scss/app.scss', 'dist/')
+    .version()
+    .sourceMaps(true, 'source-map')
     .setPublicPath('dist/')
-    // Edit theme name here
-    .setResourceRoot('/app/themes/theme-name/')
-    .extract([
-        'jquery'
-    ])
-    // Edit URL
-    .browserSync('user.projet.zout.interne');
+    .setResourceRoot('/app/themes/theme-name/dist/')
+    .extract();

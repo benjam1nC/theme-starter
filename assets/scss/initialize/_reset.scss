@@ -2,15 +2,8 @@
     margin: 0px;
     padding: 0px;
     border: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-canvas {
-    &::selection {
-        background-color: transparent;
-    }
+    -webkit-tap-highlight-color: transparent;
 }
 
 img {
@@ -50,7 +43,6 @@ body {
     width: 100%;
     height: auto;
     overflow: hidden;
-    color: cc_getColor( noir );
 }
 
 h1, h2, h3, h4, h5, h6 {

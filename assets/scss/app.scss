@@ -1,8 +1,8 @@
 // Variables
-@import 'variables';
-@import 'reset';
+@import 'initialize/variables';
+@import 'initialize/reset';
 
 // Templates
-/*
-* Your files here
-*/
+@import 'generic/common';
+
+@import 'templates/home';
