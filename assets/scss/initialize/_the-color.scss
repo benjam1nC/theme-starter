@@ -6,13 +6,12 @@
  * Thanks to Hugo Giraudel, as usual, master of Sass. 😊
 
  * @access  public
- * @author 	Jérémy Levron <levronjeremy@19h47.fr>
+ * @author  Jérémy Levron <levronjeremy@19h47.fr>
  * @edited for Couleur Citron  Benjamin Costes <https://twitter.com/benjam1nC>
  */
-@function get_the_color( $keys... ) { 
-    
+@function color( $keys... ) {
     $map: $color-variations;
-    $color-base: map-get( $map, nth( $keys, 1 ) );
+    $color-base: map-get($map, nth($keys, 1));
     $result: null;
 
     @if length( $keys ) == 1 {
@@ -22,25 +21,11 @@
 
     @if length( $keys ) == 2 {
 
-        $color-key: nth( $keys, 1 );
-        $color-value: nth( $keys, 2 );
+        $color-key: nth($keys, 1);
+        $color-value: nth($keys, 2);
 
-        $result: map-get( $color-base, $color-value );
+        $result: map-get($color-base, $color-value);
     }
 
     @return $result;
-}
-
-
-/**
- * The color
- * 
- * Retrieve the color from $color-variations map
- *
- * @param  arglist      $keys
- * @return function     get_the_color()
- * @author Jérémy Levron<levronjeremy@19h47.fr>
- */
-@function cc_getColor( $keys... ) {
-    @return get_the_color( $keys... );
 }
